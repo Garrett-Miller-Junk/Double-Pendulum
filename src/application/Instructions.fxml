@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Double Pendulum Instructions FXML file
+This file createsv an instructions popup window that informs the user on how to operate the simulation
+Garrett Miller-Junk
+June 7th, 2020
+ -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DoublePendulumController">
+   <children>
+      <TextArea layoutX="36.0" layoutY="14.0" prefHeight="216.0" prefWidth="550.0" text="how to use this program: This program simulates the motion of a double pendulum. In order to change starting values, the settings file can be accessed to change the starting angles, masses, lengths, and friction value in the simulation. During the simulation, clicking on one of the masses will temporarily stop the simulation allowing you to alter its angle. Once you click again, the simulation will resume." wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="instructionsButton" layoutX="184.0" layoutY="244.0" mnemonicParsing="false" onAction="#closeCurrentWindow" prefHeight="120.0" prefWidth="216.0" text="CLOSE" />
+   </children>
+</Pane>
+
